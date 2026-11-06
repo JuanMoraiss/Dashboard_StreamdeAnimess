@@ -1,10 +1,10 @@
-# AniStream · Painel do catálogo de animes
+# Anime Stream · Painel do catálogo de animes
 
 Dashboard com dados reais de animes, CRUD de uma lista pessoal e API pública, feito como projeto da disciplina.
 
-**Site publicado:** (colar aqui o link do GitHub Pages)
+**Site publicado:** https://juanmoraiss.github.io/Dashboard_StreamdeAnimess/
 
-**Equipe:** (nomes dos integrantes)
+**Equipe:** Emerson Heytor Trajano de Souza, Gabriel Caetano Araújo de Melo e Juan Augusto de Morais Araújo
 
 ## O que o site tem
 - **Dashboard (Chart.js):** lançamentos por ano (linha), títulos por formato (rosca), ranking de gêneros (barras) e "Meus gêneros × catálogo" (barras agrupadas), todos com título, eixos e unidades.
@@ -17,16 +17,6 @@ Dashboard com dados reais de animes, CRUD de uma lista pessoal e API pública, f
 - Dados do catálogo: *Anime Dataset 2023* (MyAnimeList), no Kaggle, agregado por `scripts/agregar_dados.py`.
 - API pública: [Jikan](https://jikan.moe) (MyAnimeList não oficial).
 - Back-end: [Back4App](https://www.back4app.com) (Parse REST API).
-
-## Como rodar
-1. Abra a pasta por um servidor local (extensão Live Server, ou `python3 -m http.server 8000`). Abrir o `index.html` com duplo clique não funciona.
-2. **Dados:** o site usa `data/catalogo.json` se existir; senão cai em `data/catalogo_exemplo.json` (números de exemplo). Para gerar o real:
-   ```bash
-   pip install pandas
-   # coloque anime-dataset-2023.csv em dados_brutos/
-   python scripts/agregar_dados.py
-   ```
-3. **Back4App:** crie um app novo e a classe `ItemLista` com as colunas `titulo` (String), `status` (String), `nota` (Number), `episodio` (Number), `generos` (Array), `imagem` (String) e `malId` (Number). Cole o Application ID e a REST API Key em `js/api-back4app.js` e ajuste as permissões da classe (CLP).
 
 ## Estrutura
 ```
