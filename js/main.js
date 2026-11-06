@@ -1,4 +1,3 @@
-// Usa o JSON real se existir; senão cai no de exemplo
 const DADOS_URLS = ['data/catalogo.json', 'data/catalogo_exemplo.json'];
 const MIN_AVALIADOS = 10; 
 
