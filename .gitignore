@@ -1,0 +1,9 @@
+# CSV bruto do Kaggle 
+dados_brutos/
+*.csv
+
+# Python e editor
+__pycache__/
+.venv/
+.vscode/
+.DS_Store
